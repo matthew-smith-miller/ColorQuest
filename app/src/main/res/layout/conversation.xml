@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/conversation_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/interlocutor_image"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="100dp"/>
+        <TextView
+            android:id="@+id/conversation_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:theme="@style/ConversationText"
+            android:visibility="visible"/>
+        <EditText
+            android:id="@+id/conversation_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorOffWhite"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/button_round"
+        android:text="\>"
+        android:textSize="40sp"
+        android:onClick="advanceConversation"/>
+</RelativeLayout>

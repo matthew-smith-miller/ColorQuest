@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ConversationText" parent="AppTheme">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/colorOffWhite</item>
+
+    </style>
+
+</resources>
