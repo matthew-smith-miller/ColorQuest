@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
     private static final String QUESTION_INDEX_KEY = "questionIndex";
     private static final String NAME_KEY = "name";
     private static final String SCORE_KEY = "score";
-    public String name;
     private static final String QUESTIONS_ATTEMPTED_KEY = "questionsAttempted";
     private static final String COLORS_ACQUIRED_KEY = "colorsAcquired";
     private static final String CURRENT_SCREEN = "currentScreen";
+    public String name;
     public Dungeon[] dungeons;
     public Dungeon activeDungeon;
     public int activeDungeonIndex;

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trivia Quest</string>
+    <string name="app_name">Color Quest</string>
     <string name="begin">Begin</string>
     <string name="mountain">mountain</string>
     <string name="forest">forest</string>
@@ -12,7 +12,6 @@
     <string name="checkbox">checkbox</string>
     <string name="name">name</string>
     <string name="map_message">Journey across the land and you will find the spirits</string>
-    <string name="color_quest">Color Quest</string>
 
     <string name="dungeon_0_conv_0">You! Yes, you! You must help us</string>
     <string name="dungeon_0_conv_1">Evil spirits have stolen all of our colors, leaving us only gray and this yellowish off-white shade</string>
