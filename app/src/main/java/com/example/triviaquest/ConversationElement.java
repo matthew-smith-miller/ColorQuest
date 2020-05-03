@@ -3,7 +3,7 @@ package com.example.triviaquest;
 import androidx.annotation.Nullable;
 
 public class ConversationElement {
-    private String mType; //input or output
+    private String mType; //input, output, question
     private String mContent;
     private String mInputTarget;
 

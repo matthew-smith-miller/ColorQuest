@@ -1,58 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/colorOffWhite"
     android:tag="conversation">
+
+    <ImageView
+        android:id="@+id/interlocutor_image"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/img_interlocutor_gbiv" />
+
     <LinearLayout
-        android:id="@+id/conversation_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal"
+        android:layout_margin="48dp"
+        android:layout_toRightOf="@id/interlocutor_image"
+        android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/interlocutor_image"
-            android:layout_width="240dp"
-            android:layout_height="240dp"
-            android:layout_marginTop="100dp"
-            android:src="@drawable/img_interlocutor_gbiv" />
         <TextView
             android:id="@+id/conversation_output"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/dungeon_2_conv_0"
-            android:layout_marginLeft="48dp"
-            android:layout_marginRight="48dp"
-            android:textAlignment="center"
             android:gravity="center_horizontal"
-            android:layout_marginTop="40dp"
+            android:text="@string/dungeon_2_conv_0"
+            android:textAlignment="center"
             android:theme="@style/ConversationText.Dark"
-            android:visibility="visible"/>
+            android:visibility="visible" />
+
         <EditText
             android:id="@+id/conversation_input"
-            android:background="@color/colorWhite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="48dp"
-            android:layout_marginRight="48dp"
-            android:layout_marginTop="40dp"
+            android:background="@color/colorWhite"
+            android:hint="@string/dungeon_0_conv_3"
             android:inputType="textCapWords"
             android:padding="12dp"
             android:theme="@style/ConversationText.Dark"
-            android:visibility="gone"/>
+            android:visibility="gone" />
     </LinearLayout>
 
     <Button
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="40dp"
         android:background="@drawable/btn_round"
         android:drawableLeft="@drawable/ic_arrow_forward_white_48dp"
+        android:onClick="advanceConversation"
         android:padding="6dp"
-        android:textSize="40sp"
-        android:onClick="advanceConversation"/>
+        android:textSize="40sp" />
 </RelativeLayout>

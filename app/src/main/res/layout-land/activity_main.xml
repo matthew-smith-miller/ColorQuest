@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/opening_background" />
+        android:src="@drawable/opening_background_land" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,15 +20,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Color Quest"
-            android:textSize="42dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/color_quest"
+            android:textSize="42sp"
             android:theme="@style/ConversationText.Dark" />
 
 
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="12dp"
             android:onClick="enterDungeon"
             android:tag="0"
             android:text="@string/begin"

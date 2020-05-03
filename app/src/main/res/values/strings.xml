@@ -1,4 +1,61 @@
 <resources>
     <string name="app_name">Trivia Quest</string>
     <string name="begin">Begin</string>
+    <string name="mountain">mountain</string>
+    <string name="forest">forest</string>
+    <string name="cave">cave</string>
+    <string name="peasant">peasant</string>
+    <string name="output">output</string>
+    <string name="input">input</string>
+    <string name="radio">radio</string>
+    <string name="text">text</string>
+    <string name="checkbox">checkbox</string>
+    <string name="name">name</string>
+    <string name="map_message">Journey across the land and you will find the spirits</string>
+    <string name="color_quest">Color Quest</string>
+
+    <string name="dungeon_0_conv_0">You! Yes, you! You must help us</string>
+    <string name="dungeon_0_conv_1">Evil spirits have stolen all of our colors, leaving us only gray and this yellowish off-white shade</string>
+    <string name="dungeon_0_conv_2">Say, what is your name?</string>
+    <string name="dungeon_0_conv_3">Enter name</string>
+    <string name="dungeon_0_conv_4">$$$name, please seek out the evil spirits and answer their questions, and you can restore our colors to us</string>
+
+    <string name="dungeon_1_conv_0">Hahaha! Imagine their horror when they went to the store. Red Delicious apples have never been delicious, and now they\'re not even r-</string>
+    <string name="dungeon_1_conv_1">Who are you?</string>
+    <string name="dungeon_1_conv_2">You want to challenge me to a battle of wits? Get ready to lose!</string>
+    <string name="dungeon_1_ques_0">What mineral in the soil of Mars gives it its distinctive red color?</string>
+    <string name="dungeon_1_ques_0_a">Iron</string>
+    <string name="dungeon_1_ques_0_o">Iron,Magnesium,Plutonium,Ytterbium</string>
+    <string name="dungeon_1_ques_1">Which European nation\'s official fan club is known as "Het Oranje Legioen" ("The Orange Legion")?</string>
+    <string name="dungeon_1_ques_1_a">Netherlands</string>
+    <string name="dungeon_1_ques_2">What is the world\'s most common cultivar of banana?</string>
+    <string name="dungeon_1_ques_2_a">Cavendish</string>
+    <string name="dungeon_1_ques_2_o">Chiquita,Kongo,Cavendish,Camellia</string>
+
+    <string name="dungeon_2_conv_0">Well, I guess my only regret is that Miles Davis records just don\'t sound the sa-</string>
+    <string name="dungeon_2_conv_1">So, you\'re the one they call $$$name? I figured you\'d be coming soon enough. </string>
+    <string name="dungeon_2_conv_2">Fine, let\'s do this!</string>
+
+    <string name="dungeon_2_ques_0">What event was celebrated for the first time on April 22, 1970?</string>
+    <string name="dungeon_2_ques_0_a">Earth Day</string>
+    <string name="dungeon_2_ques_1">Lapis lazuli was first mined in the 7th century in Badakhshan province in which South Asian country?</string>
+    <string name="dungeon_2_ques_1_a">Afghanistan</string>
+    <string name="dungeon_2_ques_2">Which of the following are true about blue jeans?</string>
+    <string name="dungeon_2_ques_2_a">Levi Strauss was born in Germany,Blue jeans were declared an essential commodity during World War II,The word denim comes from the name of a city in France</string>
+    <string name="dungeon_2_ques_2_o">Levi Strauss was born in Germany,The first Levi Strauss jeans were sold to miners during the 1849 Gold Rush,Blue jeans were declared an essential commodity during World War II,The word denim comes from the name of a city in France</string>
+    <string name="dungeon_2_ques_3">Walt Whitman\'s poem \"When Lilacs Last in the Dooryard Bloom\'d\" was written as an elegy upon the death of whom?</string>
+    <string name="dungeon_2_ques_3_a">Abraham Lincoln</string>
+    <string name="dungeon_2_ques_3_o">Herman Melville,Abraham Lincoln,Sylvia Plath,Andrew Jackson</string>
+
+    <string name="dungeon_3_conv_0">I mean, I think everyone\'s pretty done with Sea World at this point anyway, but now they really have nothing going for th-</string>
+    <string name="dungeon_3_conv_1">Well, so you\'ve come to me at last. I think this has gone too far, $$$name</string>
+    <string name="dungeon_3_conv_2">Get ready to face mental annihilation</string>
+
+    <string name="dungeon_3_ques_0">After the Great White, what type of shark causes the most human deaths each year?</string>
+    <string name="dungeon_3_ques_0_a">Tiger shark</string>
+    <string name="dungeon_3_ques_0_o">Black-tipped reef shark,Whale shark,Tiger shark,Hammerhead shark</string>
+    <string name="dungeon_3_ques_1">What insect was the primary vector for bubonic plague?</string>
+    <string name="dungeon_3_ques_1_a">Flea</string>
+
+
 </resources>

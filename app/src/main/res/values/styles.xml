@@ -11,7 +11,24 @@
         <item name="android:textSize">24sp</item>
         <item name="fontFamily">serif-monospace</item>
         <item name="android:textColor">@color/colorOffWhite</item>
-
     </style>
+
+    <style name="ConversationText.Dark" parent="ConversationText">
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
+    <style name="RadioCheckbox" parent="AppTheme">
+        <item name="buttonTint">@color/colorDarkGray</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
+    <dimen name="dungeonButtonWidth">72dp</dimen>
+    <dimen name="dungeonButtonHeight">72dp</dimen>
+
+    <dimen name="spacing_color_horizontal">12dp</dimen>
+    <dimen name="spacing_color_vertical">12dp</dimen>
+
+    <dimen name="spacing_color_horizontal_land">24dp</dimen>
+    <dimen name="spacing_color_vertical_land">48dp</dimen>
 
 </resources>

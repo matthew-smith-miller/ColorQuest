@@ -4,9 +4,23 @@
     <color name="colorPrimaryDark">#ba000d</color>
     <color name="colorAccent">#ffc107</color>
     <color name="colorAccentLight">#fff350</color>
-    <color name="colorOffWhite">#FFF8E1</color>
+    <color name="colorOffWhite">#ffecb3</color>
+    <color name="colorDarkGray">#212121</color>
+    <color name="colorLightGray">#373737</color>
+    <color name="colorRoad">#f44336</color>
+    <color name="colorRoadDisabled">#cfd8dc</color>
 
-    <color name="colorD1Primary">#3f51b5</color>
+    <color name="colorRed">#f44336</color>
+    <color name="colorOrange">#f57c00</color>
+    <color name="colorYellow">#ffc107</color>
+    <color name="colorGreen">#4caf50</color>
+    <color name="colorBlue">#2196f3</color>
+    <color name="colorIndigo">#3f51b5</color>
+    <color name="colorViolet">#4527a0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorD1Primary">#7986cb</color>
     <color name="colorD1PrimaryDark">#3f51b5</color>
     <color name="colorD1Accent">#78909c</color>
     <color name="colorD1AccentLight">#a7c0cd</color>

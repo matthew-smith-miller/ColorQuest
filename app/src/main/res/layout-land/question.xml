@@ -1,65 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/question_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:background="@color/colorD3Accent"
+    android:tag="question">
 
-    <RelativeLayout
-        android:id="@+id/question_background"
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/interlocutor_image_small"
+        android:layout_alignTop="@id/interlocutor_image_small"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/img_round_interlocutor_halo" />
+
+    <ImageView
+        android:id="@+id/interlocutor_image_small"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_interlocutor_roy" />
+
+    <View
+        android:layout_width="144dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/img_speech_bubble_extension" />
+
+    <TextView
+        android:id="@+id/speech_bubble"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interlocutor_image_small"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/img_speech_bubble"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp"
+        android:text="What is the most common cultivar of banana in the world?"
+        android:theme="@style/ConversationText.Dark" />
+
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="48dp"
+        android:layout_toRightOf="@id/speech_bubble"
+        android:background="@color/colorRoadDisabled" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorD3Accent"
-        android:tag="question">
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignLeft="@id/interlocutor_image_small"
-            android:layout_alignTop="@id/interlocutor_image_small"
-            android:layout_marginLeft="-10dp"
-            android:layout_marginTop="-10dp"
-            android:src="@drawable/img_round_interlocutor_halo" />
-
-        <ImageView
-            android:id="@+id/interlocutor_image_small"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="24dp"
-            android:src="@drawable/img_interlocutor_roy" />
-
-        <View
-            android:layout_width="144dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="84dp"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/img_speech_bubble_extension" />
-
-        <TextView
-            android:id="@+id/speech_bubble"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/interlocutor_image_small"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="36dp"
-            android:background="@drawable/img_speech_bubble"
-            android:paddingLeft="18dp"
-            android:paddingTop="12dp"
-            android:paddingRight="18dp"
-            android:paddingBottom="12dp"
-            android:text="What is the most common cultivar of banana in the world?"
-            android:theme="@style/ConversationText.Dark" />
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="48dp"
+        android:layout_toRightOf="@id/vertical_line">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/speech_bubble"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginBottom="48dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
             android:theme="@style/ConversationText.Dark">
@@ -70,14 +78,16 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorOffWhite"
                 android:padding="12dp"
-                android:text="Cavendish" />
+                android:text="Cavendish"
+                android:visibility="gone" />
 
             <RadioGroup
                 android:id="@+id/answer_radio_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorOffWhite"
-                android:padding="6dp">
+                android:padding="6dp"
+                android:visibility="gone">
 
                 <RadioButton
                     android:id="@+id/answer_radio_0"
@@ -122,7 +132,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorOffWhite"
                 android:orientation="vertical"
-                android:padding="6dp">
+                android:padding="6dp"
+                android:visibility="visible">
 
                 <CheckBox
                     android:id="@+id/answer_checkbox_0"
@@ -139,7 +150,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="top"
                     android:paddingLeft="12dp"
-                    android:text="Mozambique"
+                    android:text="The first Levi Strauss jeans were sold to miners during the 1849 Gold Rush"
                     android:theme="@style/RadioCheckbox" />
 
                 <CheckBox
@@ -148,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="top"
                     android:paddingLeft="12dp"
-                    android:text="Zambia"
+                    android:text="Blue jeans were declared an essential commodity during World War II"
                     android:theme="@style/RadioCheckbox" />
 
                 <CheckBox
@@ -157,16 +168,17 @@
                     android:layout_height="wrap_content"
                     android:gravity="top"
                     android:paddingLeft="12dp"
-                    android:text="Rwanda"
+                    android:text="The word denim comes from the name of a city in France"
                     android:theme="@style/RadioCheckbox" />
             </LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
                 android:onClick="advanceQuestions"
                 android:text="Submit answer" />
         </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>
