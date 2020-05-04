@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
                     passedValidation = true;
                     RadioButton radioButton = (RadioButton) findViewById(
                             answerRadioGroup.getCheckedRadioButtonId());
-                    radioButton.setChecked(false);
+                    answerRadioGroup.clearCheck();
                     checkSingleAnswer(radioButton.getText().toString());
                     break;
                 }
@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkSingleAnswer(String userResponse) {
         Question question = activeDungeon.questions[questionIndex];
-        if (userResponse.toLowerCase().equals(question.getAnswer().toLowerCase())) {
+        if (userResponse.toLowerCase().trim().equals(question.getAnswer().toLowerCase())) {
             registerResponse(true);
         } else {
             registerResponse(false);
